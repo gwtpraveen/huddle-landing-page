@@ -44,12 +44,17 @@ html {
       border-radius: 15px;
       border: none;
       background-color: #fff;
+      cursor: pointer;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.09);
+      font-family: inherit;
+      font-weight: $font-weight-700;
     }
   }
 
   .h1 {
     font-size: 1.7rem;
     margin-bottom: 2rem;
+    font-family: $font-popin-w600;
   }
 
   .discription {
@@ -63,10 +68,16 @@ html {
     margin-bottom: 3rem;
     border-radius: 25px;
     border: none;
-    background-color: hotpink;
+    background-color: $Pink;
     color: #fff;
-    font-family: bolder;
-    font-family: $font-popin-w600;
+    transition: 300ms ease;
+    font-family: inherit;
+    font-weight: $font-weight-700;
+
+    &:hover {
+      opacity: .8;
+      cursor: pointer;
+    }
   }
 }
 
@@ -79,25 +90,27 @@ main {
 .section {
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.364);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.09);
   margin: 3rem auto;
   padding: 3rem 1rem;
   .text-div {
     .h2 {
       font-size: 1.3rem;
       margin: 2rem 0 1rem;
+      font-family: $font-popin-w600;
     }
 
     .discription {
       margin: auto;
       line-height: 29px;
+      color: $Grayish-Blue;
     }
   }
 }
 
 // call to action 
 .call-to-action {
-  background-color: gray;
+  background-color: #fff;
   text-align: center;
   padding: 3rem 1rem 3rem;
   border-radius: 10px;
@@ -107,15 +120,27 @@ main {
   width: 95%;
   max-width: 500px;
   transform: translateX(-50%);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.097);
   .h2 {
     font-size: 1.25rem;
     margin-bottom: 2rem;
+    font-family: $font-popin-w600;
   }
 
   .btn {
     padding: 1em 5em;
     border-radius: 25px;
     border: none;
+    background-color: $Pink;
+    color: #fff;
+    transition: 300ms ease;
+    font-family: inherit;
+    font-weight: $font-weight-700;
+
+    &:hover {
+      opacity: .8;
+      cursor: pointer;
+    }
   }
 }
 
@@ -134,6 +159,10 @@ main {
     .row {
       td {
         padding-bottom: 1.5rem;
+
+        p {
+          line-height: 24px;
+        }
       }
       .img {
         width: 50px;
@@ -145,6 +174,24 @@ main {
 
   .links {
     margin-bottom: 1.5rem;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: "";
+      width: 0%;
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+      top: 105%;
+      left: 0;
+      transition: 500ms ease;
+      opacity: .3;
+    }
+
+    &:hover::after {
+      width: 100%;
+      opacity: 1;
+    }
   }
 
   .social-icon-copy-right {
@@ -164,6 +211,13 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 300ms ease;
+
+        &:hover {
+          color: $Pink;
+          border-color: $Pink;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -232,6 +286,10 @@ main {
 
     .text-div {
       text-align: left;
+
+      .discription {
+        font-size: .9rem
+      }
     }
   }
 

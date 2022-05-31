@@ -48,11 +48,17 @@ html {
   border-radius: 15px;
   border: none;
   background-color: #fff;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.09);
+  font-family: inherit;
+  font-weight: 700;
 }
 
 .header .h1 {
   font-size: 1.7rem;
   margin-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .header .discription {
@@ -66,10 +72,17 @@ html {
   margin-bottom: 3rem;
   border-radius: 25px;
   border: none;
-  background-color: hotpink;
+  background-color: #ff52bf;
   color: #fff;
-  font-family: bolder;
-  font-family: "Poppins", sans-serif;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.header .btn:hover {
+  opacity: .8;
+  cursor: pointer;
 }
 
 main {
@@ -80,8 +93,8 @@ main {
 .section {
   text-align: center;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.364);
-          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.364);
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.09);
   margin: 3rem auto;
   padding: 3rem 1rem;
 }
@@ -89,15 +102,17 @@ main {
 .section .text-div .h2 {
   font-size: 1.3rem;
   margin: 2rem 0 1rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .section .text-div .discription {
   margin: auto;
   line-height: 29px;
+  color: #808d99;
 }
 
 .call-to-action {
-  background-color: gray;
+  background-color: #fff;
   text-align: center;
   padding: 3rem 1rem 3rem;
   border-radius: 10px;
@@ -108,17 +123,31 @@ main {
   max-width: 500px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.097);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.097);
 }
 
 .call-to-action .h2 {
   font-size: 1.25rem;
   margin-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .call-to-action .btn {
   padding: 1em 5em;
   border-radius: 25px;
   border: none;
+  background-color: #ff52bf;
+  color: #fff;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.call-to-action .btn:hover {
+  opacity: .8;
+  cursor: pointer;
 }
 
 .footer {
@@ -139,6 +168,10 @@ main {
   padding-bottom: 1.5rem;
 }
 
+.footer .details .row td p {
+  line-height: 24px;
+}
+
 .footer .details .row .img {
   width: 50px;
   display: -webkit-box;
@@ -150,6 +183,26 @@ main {
 
 .footer .links {
   margin-bottom: 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.footer .links::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 105%;
+  left: 0;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+  opacity: .3;
+}
+
+.footer .links:hover::after {
+  width: 100%;
+  opacity: 1;
 }
 
 .footer .social-icon-copy-right {
@@ -182,6 +235,14 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.footer .social-icon-copy-right .social-icons .so-icon:hover {
+  color: #ff52bf;
+  border-color: #ff52bf;
+  cursor: pointer;
 }
 
 @media (min-width: 1000px) {
@@ -246,6 +307,9 @@ main {
   }
   .section .text-div {
     text-align: left;
+  }
+  .section .text-div .discription {
+    font-size: .9rem;
   }
   .footer {
     font-size: .8rem;
