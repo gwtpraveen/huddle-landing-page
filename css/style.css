@@ -1,0 +1,78 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.svg {
+  width: 100%;
+}
+
+.container {
+  max-width: 375px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem 10px 2rem 10px;
+  background: #ebfbff url(../images/bg-hero-mobile.svg) no-repeat center center/cover;
+}
+
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.header .nav .logo {
+  width: 120px;
+}
+
+.header .nav .try-btn {
+  padding: .5em 2em;
+  border-radius: 15px;
+  border: none;
+  background-color: #fff;
+}
+
+.header .h1 {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.header .discription {
+  width: 92%;
+  margin: 0rem auto 2rem;
+  line-height: 29px;
+}
+
+.header .btn {
+  padding: 1em 6em;
+  margin-bottom: 3rem;
+  border-radius: 25px;
+  border: none;
+  background-color: hotpink;
+  color: #fff;
+  font-family: bolder;
+  font-family: "Poppins", sans-serif;
+}
+
+.section {
+  text-align: center;
+  margin: 8rem 0;
+}
+/*# sourceMappingURL=style.css.map */
