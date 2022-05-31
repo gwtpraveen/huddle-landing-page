@@ -1,7 +1,5 @@
-// @use "font" as *;
-// @use "colors" as *;
-@import "colors";
-@import "font";
+@use "font" as *;
+@use "colors" as *;
 
 *, *::after, *::before {
   box-sizing: border-box;
