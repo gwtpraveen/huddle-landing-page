@@ -22,6 +22,7 @@ html {
 .header {
   text-align: center;
   padding: 2rem 10px 2rem 10px;
+  margin-bottom: 5rem;
   background: #ebfbff url(../images/bg-hero-mobile.svg) no-repeat center center/cover;
 }
 
@@ -71,8 +72,114 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+main {
+  position: relative;
+  padding: 0 10px 13rem;
+}
+
 .section {
   text-align: center;
-  margin: 8rem 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.364);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.364);
+  margin: 3rem auto;
+  padding: 3rem 1rem;
+}
+
+.section .text-div .h2 {
+  font-size: 1.3rem;
+  margin: 2rem 0 1rem;
+}
+
+.section .text-div .discription {
+  margin: auto;
+  line-height: 29px;
+}
+
+.call-to-action {
+  background-color: gray;
+  text-align: center;
+  padding: 3rem 1rem 3rem;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  bottom: -75px;
+  width: 95%;
+  max-width: 450px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.call-to-action .h2 {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.call-to-action .btn {
+  padding: 1em 5em;
+  border-radius: 25px;
+  border: none;
+}
+
+.footer {
+  background-color: #00252e;
+  padding: 9rem 1rem 4rem;
+  color: #fff;
+}
+
+.footer .logo {
+  margin-bottom: 2rem;
+}
+
+.footer .details {
+  margin-bottom: 2rem;
+}
+
+.footer .details .row td {
+  padding-bottom: 1.5rem;
+}
+
+.footer .details .row .img {
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.footer .links {
+  margin-bottom: 1.5rem;
+}
+
+.footer .social-icon-copy-right {
+  text-align: center;
+}
+
+.footer .social-icon-copy-right .social-icons {
+  margin: 0 auto 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .social-icon-copy-right .social-icons .so-icon {
+  margin: 0 .5rem;
+  border: 1px solid white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
